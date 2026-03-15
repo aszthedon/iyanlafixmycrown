@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --bg: 255 255 255; --fg: 20 20 20; }
+html, body { height: 100%; }
+body { color: rgb(var(--fg)); background: rgb(var(--bg)); }
+
+/* Subtle expressive background texture */
+.bg-artistic {
+  background:
+    radial-gradient(800px 300px at 10% 5%, rgba(188, 94, 255, 0.22), transparent 60%),
+    radial-gradient(700px 280px at 90% 18%, rgba(231, 170, 81, 0.18), transparent 60%),
+    radial-gradient(600px 260px at 70% 85%, rgba(238, 198, 114, 0.22), transparent 60%),
+    linear-gradient(180deg, rgba(49,42,44,0.02), rgba(49,42,44,0.00));
+}
+
+/* Button shimmer */
+@keyframes shimmer { 0% { transform: translateX(-120%); } 100% { transform: translateX(220%); } }
+.btn-shimmer { position: relative; overflow: hidden; }
+.btn-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: -60% -40%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+  transform: translateX(-120%);
+}
+.btn-shimmer:hover::after { animation: shimmer 900ms ease-out; }

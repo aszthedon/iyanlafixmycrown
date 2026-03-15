@@ -1,0 +1,29 @@
+[
+  {
+    "id": "0ed7943a-0fd6-44db-bfd4-04a9a114492f",
+    "createdAt": "2026-03-13T15:48:50.218Z",
+    "status": "pending_deposit",
+    "serviceId": "loc-retwist",
+    "variantId": "begin",
+    "addonIds": [
+      "triangle-parts"
+    ],
+    "slot": {
+      "date": "2026-03-13",
+      "start": "10:30",
+      "end": "13:00"
+    },
+    "client": {
+      "name": "hfdak",
+      "phone": "hsk jj",
+      "email": "isahf hskcIOU",
+      "notes": "LSKDFAK KHWKSH"
+    },
+    "totals": {
+      "total": 95,
+      "deposit": 25,
+      "remaining": 70
+    },
+    "policyAck": true
+  }
+]

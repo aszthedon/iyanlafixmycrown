@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "brandName": "Iyanla Fix My Hair",
+    "tagline": "Adjust Your Crown & Walk Like Royalty",
+    "timezone": "America/Detroit"
+  },
+  "depositTiers": [
+    {
+      "minTotal": 200,
+      "deposit": 100
+    },
+    {
+      "minTotal": 150,
+      "deposit": 50
+    },
+    {
+      "minTotal": 0,
+      "deposit": 25
+    }
+  ],
+  "schedule": {
+    "bufferMinutes": 15,
+    "slotStepMinutes": 15,
+    "weeklyHours": {
+      "sun": null,
+      "mon": null,
+      "tue": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "wed": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "thu": {
+        "start": "10:00",
+        "end": "18:00"
+      },
+      "fri": {
+        "start": "10:00",
+        "end": "19:00"
+      },
+      "sat": {
+        "start": "09:00",
+        "end": "17:00"
+      }
+    },
+    "blockedDates": []
+  },
+  "addons": [
+    {
+      "id": "hair-provided",
+      "name": "Hair Provided",
+      "price": 20
+    },
+    {
+      "id": "boho-added",
+      "name": "Boho Added",
+      "price": 20
+    },
+    {
+      "id": "boho-provided",
+      "name": "Boho Provided",
+      "price": 40
+    },
+    {
+      "id": "triangle-parts",
+      "name": "Triangle Parts",
+      "price": 15
+    },
+    {
+      "id": "style-upgrade",
+      "name": "Style Upgrade",
+      "price": 10
+    }
+  ],
+  "services": [
+    {
+      "id": "loc-retwist",
+      "name": "Loc Retwist",
+      "category": "Loc Maintenance",
+      "baseDurationMin": 150,
+      "variants": [
+        {
+          "id": "begin",
+          "name": "Beginner Length",
+          "price": 80
+        },
+        {
+          "id": "shoulder-midback",
+          "name": "Shoulder\u2013Mid Back",
+          "price": 100
+        },
+        {
+          "id": "midback",
+          "name": "Mid Back",
+          "price": 120
+        },
+        {
+          "id": "buttlength",
+          "name": "Butt Length",
+          "price": 160
+        }
+      ],
+      "allowedAddonIds": [
+        "triangle-parts",
+        "style-upgrade"
+      ]
+    },
+    {
+      "id": "knotless-braids",
+      "name": "Knotless Braids",
+      "category": "Braids",
+      "baseDurationMin": 390,
+      "variants": [
+        {
+          "id": "jumbo",
+          "name": "Jumbo",
+          "price": 90
+        },
+        {
+          "id": "large",
+          "name": "Large",
+          "price": 110
+        },
+        {
+          "id": "medium",
+          "name": "Medium",
+          "price": 130
+        },
+        {
+          "id": "small",
+          "name": "Small",
+          "price": 150
+        }
+      ],
+      "allowedAddonIds": [
+        "hair-provided",
+        "boho-added",
+        "boho-provided",
+        "triangle-parts",
+        "style-upgrade"
+      ]
+    }
+  ],
+  "categories": [
+    "Loc Maintenance",
+    "Starter Locs",
+    "Braids",
+    "Natural Styles",
+    "Kids Services",
+    "Take Downs"
+  ]
+}
